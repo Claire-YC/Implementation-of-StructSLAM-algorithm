@@ -10,4 +10,6 @@ We borrowed code for vanishing point detection. Great thank you to the author Xi
 ## How to use the code:
 1. Download and install the code for vanishing point detection.
 `pip install lu-vp-detect`
-2. 
+2. Download the [dataset](https://www.dropbox.com/sh/ewqhb32zqpat8rt/AACgVf1YehSYjovLkon6nK-oa/Datasets/Indoor/Bicocca_Static_Lamps/Bicocca_2009-02-25b?dl=0) <br>
+Frontal, Groundtruth, IMU_Stretched, Odometry_XYZ.
+3. Change the file path for dataset in `main`.
