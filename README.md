@@ -17,7 +17,7 @@ Frontal, Groundtruth, IMU_Stretched, Odometry_XYZ.
 ## File instruction:
 1. img_imu.txt: As the data acquisition frequency of the camera and the IMU is different, we pairwise the camera frame with the closest IMU data.
 2. img_odx.txt: For each camera frame, we find out the 5 closest odometry data to calculate the x and y linear velocity. 
-3. EKF_with_6_state.py: Define the EKF class with motion model, measurement model, and Jacobian matrices. The camera state is a $6 \times 1$ vector, i.e. $x_c = [x, y, \theta, v_x, v_y, w_z]$.
+3. EKF_with_6_state.py: Define the EKF class with motion model, measurement model, data association model (chi-square function), state update model and Jacobian matrices. The camera state is a $6 \times 1$ vector, i.e. $x_c = [x, y, \theta, v_x, v_y, w_z]$.
 4. feature_manage.py: To maintain the total number of features, 15 in our case, delete the old one and add newly initialized structure line updating the covariance at the same time.
 5. init.py: To initialize the structure line with asscosiate covariance matrix.
 6. objects.py: Define two objects camera and structure line.
